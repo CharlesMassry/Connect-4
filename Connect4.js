@@ -66,7 +66,7 @@ while(gamefinished === 0){
 			break;
 		};
 	};
-	if (move > 3) {
+	if (move > 2) {
 		if (board [i] [move - 3] === chip && board [i] [move - 2] === chip  && board [i] [move - 1] === chip) {
 			redraw();
 			alert("Congratulations! " + whoseturn + " Wins the Game!");
@@ -150,16 +150,7 @@ while(gamefinished === 0){
 		};
 	};
 	//display
-	document.body.innerHTML = "";
-	document.write("<pre>");
-	for(var i = 0; i <= 5; i++) {
-		for (var j = 0; j <= 6; j++){
-			if(board[i][j] !== "  "){
-				document.write(board[i][j] + "  ");
-			};
-		};
-		document.write("<br> <br>");
-	};
+	redraw();
 	//switch turns
 	if (whoseturn === "Red"){
 		whoseturn = "Black";
