@@ -1,3 +1,4 @@
+window.onload=function(){
 document.write("<div></div>");
 //board
 alert("Go for the Glory, Go for the Score, Go for It, Connect Four!");
@@ -171,4 +172,5 @@ function redraw(){
 		};
 		document.write("<br> <br>");
 	};
+};
 };
