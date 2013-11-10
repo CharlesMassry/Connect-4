@@ -10,6 +10,7 @@ var board = [
 	["#", "#", "#", "#", "#", "#", "#"],
 	["#", "#", "#", "#", "#", "#", "#"],
 ];
+redraw();
 var whoseturn = "Red";
 var gamefinished = 0;
 while(gamefinished === 0){
